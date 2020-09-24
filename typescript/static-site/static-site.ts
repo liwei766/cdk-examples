@@ -55,7 +55,7 @@ export class StaticSite extends Construct {
                 acmCertRef: certificateArn,
                 names: [ siteDomain ],
                 sslMethod: cloudfront.SSLMethod.SNI,
-                securityPolicy: cloudfront.SecurityPolicyProtocol.TLS_V1_1_2016,
+                securityPolicy: cloudfront.SecurityPolicyProtocol.TLS_V1_2_2019,
             },
             originConfigs: [
                 {
@@ -82,6 +82,6 @@ export class StaticSite extends Construct {
             destinationBucket: siteBucket,
             distribution,
             distributionPaths: ['/*'],
-          });
+        });
     }
 }
