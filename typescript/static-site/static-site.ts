@@ -52,7 +52,7 @@ export class StaticSite extends Construct {
         *********/
         // Use the exist cert
         acm.CertificateValidation;
-        const certificateArn = 'arn:aws:acm:us-east-1:443334274279:certificate/81b48bb7-d3c7-4038-87c1-c771a2d1b925';
+        const certificateArn = 'arn:aws:acm:us-east-1:477291583854:certificate/384f05f2-5471-4d95-9648-92d0523b421e';
 
         // CloudFront distribution that provides HTTPS
         const distribution = new cloudfront.CloudFrontWebDistribution(this, 'SiteDistribution', {
